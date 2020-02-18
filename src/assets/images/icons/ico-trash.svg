@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-trash</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-trash" transform="translate(0.000000, -1.000000)" fill="#00264E" fill-rule="nonzero">
+            <path d="M12.999,5 L0.999,5 L0.999,17 C0.999,18.104 1.895,19 3,19 L10.999,19 C12.105,19 12.999,18.104 12.999,17 L12.999,5 M9.499,0.999 L4.499,0.999 L3.5,2 L0.999,2 C0.448,2 8.8817842e-16,2.448 8.8817842e-16,2.999 L8.8817842e-16,4 L14,4 L14,2.999 C14,2.448 13.552,2 12.999,2 L10.5,2 L9.499,0.999" id="Fill-3"></path>
+        </g>
+    </g>
+</svg>

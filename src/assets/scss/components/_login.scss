@@ -1,0 +1,22 @@
+.login-page {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .login-logo {
+    margin: 20px auto;
+    max-width: 80%;
+  }
+
+  .paper {
+    border-radius: 0;
+    padding: 25px;
+
+    .remind-text {
+      margin-top: 20px;
+    }
+  }
+}

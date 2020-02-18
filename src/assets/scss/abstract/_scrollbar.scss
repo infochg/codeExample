@@ -1,0 +1,24 @@
+.scrollbar-wrapper {
+  max-height: 100%;
+  overflow: auto;
+}
+
+.ScrollbarsCustom-Wrapper {
+  right: 0 !important;
+}
+
+.ScrollbarsCustom-Scroller {
+  margin-right: -16px !important;
+}
+
+.ScrollbarsCustom-Track {
+  background: transparent !important;
+  right: 5px !important;
+  top: 70px !important;
+  width: 5px !important;
+  height: calc(100% - 80px) !important;
+}
+
+.ScrollbarsCustom-Thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+}

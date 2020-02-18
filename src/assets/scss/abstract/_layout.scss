@@ -1,0 +1,231 @@
+html, body {
+  font-family: 'SF UI Text Regular';
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background: #EAEFF4;
+  height: 100%;
+}
+
+* {
+  outline:0;
+}
+
+#root {
+  height: 100%;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: 'Idealist Sans';
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.top-bar-wrapper {
+  background: #FF9000;
+  text-align: center;
+
+  .top-bar {
+    //max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+
+    .logo-wrapper {
+      background: #fff;
+      padding: 11px 5px;
+      max-width: 261px;
+
+      img {
+        height: 48px;
+      }
+    }
+
+    h1 {
+      color: #fff;
+
+    }
+  }
+  .top-title {
+    max-width: 3000px;
+    flex: 1;
+  }
+}
+
+.content-wrapper {
+  //max-width: 1200px;
+  min-height: calc(100% - 74px);
+  margin: 0 auto;
+  display: flex;
+
+  .MuiGrid-container {
+    display: flex;
+    min-height: 100%;
+
+    .navbar {
+      background: #00264E;
+      display: flex;
+      flex-direction: column;
+      padding-top: 25px;
+      max-width: 261px;
+
+      .menu-item {
+        width: 100%;
+        text-align:center;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Idealist Sans';
+        box-sizing: border-box;
+        text-decoration: none;
+        transition: all .15s;
+
+         &:after {
+           content: '\00a0';
+           background-image: radial-gradient(at 50% 0, #fff 0%, #fff 50%, transparent 75%);
+           background-size: 100% 1px;
+           background-repeat: no-repeat;
+           float:left;
+           width:70%;
+           margin: 25px 15%;
+         }
+
+        &:last-child {
+          padding-bottom: 25px;
+
+          &:after {
+            display: none;
+          }
+        }
+
+        .ico-wrapper {
+          margin: 0 auto 10px auto;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 59px;
+          height: 59px;
+          background: #001D3D;
+          border: 1px solid #001D3D;
+          transition: all .15s;
+        }
+
+        img {
+          transition: all .15s;
+        }
+
+        &.active, &:hover {
+          color: #FF9300;
+
+          .ico-wrapper {
+            border: 1px solid #FF9300;
+          }
+
+          img {
+            filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+          }
+        }
+      }
+    }
+  }
+
+  .content-block {
+    padding: 25px;
+    max-width: 3000px;
+    flex: 1;
+
+    .content-inner-block {
+      max-width: 1100px;
+      margin: 0 auto;
+      height: 100%;
+    }
+
+    .page-title {
+      margin: 0 0 25px 0;
+      text-align: center;
+      position: relative;
+
+      h1 {
+        color: #FF9300;
+        background: #EAEFF4;
+        display: inline-block;
+        padding: 0 20px;
+        position: relative;
+        z-index: 2;
+      }
+
+      &:after {
+        content: '\00a0';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background-image: radial-gradient(at 50% 0, #FF9300 0%, #FF9300 50%, transparent 75%);
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        width:70%;
+        margin: 0 15%;
+      }
+    }
+  }
+}
+
+.loading-block {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9000;
+  background: rgba(38,78,100,0.6);
+  color: #fff;
+  padding: 15px;
+
+  .form-spinner {
+    color: #fff !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+}
+
+.progressbar-block {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9000;
+
+  .MuiLinearProgress-root {
+    height: 10px;
+  }
+
+  .MuiLinearProgress-colorPrimary {
+    background-color: rgba(255,144,0, 0.3);
+  }
+
+  .MuiLinearProgress-barColorPrimary {
+    background-color: rgba(255,144,0, 1);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .content-wrapper {
+    .content-block {
+      .page-title {
+        &:after {
+          width:100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
